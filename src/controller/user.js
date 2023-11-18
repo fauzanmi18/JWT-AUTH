@@ -44,8 +44,7 @@ const register = async(req, res) => {
     try {
         const insert = await User.create({
             username: username,
-            password: hash,
-            test: test
+            password: hash
         })
 
         const response = {
